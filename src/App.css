@@ -1,0 +1,89 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color: lightsteelblue;
+}
+.to-do {
+    width: 30%;
+    min-height: 500px;
+    margin: 3rem auto;
+    padding: 1rem 2rem 2rem;
+    background-color:#46549E;
+    border-radius: 10px;
+}
+.heading {
+    text-align: center;
+    color: white;
+    padding-bottom:1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    /* border-bottom: 1px solid white; */
+}
+small {
+    display: block;
+    margin-bottom: .3rem;
+    font-size: larger;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.iconPanel {
+    margin: auto;
+    text-align: center;
+    color: white;
+}
+.icon {
+    padding: 1rem;
+    cursor: pointer;
+}
+.form-group {
+    width: 100%;
+}
+.form-group input {
+    width: calc(100% - 2rem);
+    outline: none;
+    border: 1px solid whitesmoke;
+    color: whitesmoke;
+    padding: 0.8rem;
+    border-radius: 5px;
+    background-color: transparent;
+}
+.item {
+    display: grid;
+    grid-template-columns: 3% 90% 3%;
+    align-items: center;
+    gap: 2%;
+    margin-bottom: .2rem;
+}
+/* .item:nth-child(even) {
+    background-color: tomato;
+} */
+.item input {
+    outline: none; 
+    border: 0;
+    color: white;
+    background-color: transparent;
+    font-family: cursive;
+    font-size: large;
+}
+.fa-asterisk {
+    font-size: xx-small;
+    color: floralwhite;
+}
+.fa-times{ cursor: pointer; padding: .2rem; display: none;}
+.item:hover > .fa-times{
+    display: block;
+}
+
+.delete {
+    display: block;
+    text-align: left;
+    margin-bottom: 1rem;
+    max-width: 15%;
+ }
+ .delete {
+     color:lightcoral;
+     cursor: pointer;
+ }
+ .delete-all {
+     display: none;
+ }
+
